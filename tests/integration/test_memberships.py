@@ -189,7 +189,7 @@ def test_api_create_bulk_members_invalid_user_id(client):
     response = client.json.post(url, json.dumps(data))
 
     assert response.status_code == 400
-    test_api_create_bulk_members_invalid_user_id
+    test_api_create_bulk_members_invalid_user_id(client)
 
 
 def test_api_create_bulk_members_with_invalid_roles(client):
